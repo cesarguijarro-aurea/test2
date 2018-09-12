@@ -108,6 +108,27 @@ public class BaseResourceTest {
         when(tokenIssuer.createToken(any(), any())).thenReturn(refreshToken);
     }
 
+	
+    @Before
+    public void setupTokens() throws GeneralSecurityException, IOException {
+        AuthenticationToken refreshToken = new AuthenticationToken();
+        refreshToken.setTokenKey("refreshTokenKey");
+        when(tokenIssuer.createToken(any(), any())).thenReturn(refreshToken);
+    }
+	
+    @Before
+    public void setupTokens() throws GeneralSecurityException, IOException {
+        AuthenticationToken refreshToken = new AuthenticationToken();
+        refreshToken.setTokenKey("refreshTokenKey");
+        when(tokenIssuer.createToken(any(), any())).thenReturn(refreshToken);
+    }
+	
+    @Before
+    public void setupTokens() throws GeneralSecurityException, IOException {
+        AuthenticationToken refreshToken = new AuthenticationToken();
+        refreshToken.setTokenKey("refreshTokenKey");
+        when(tokenIssuer.createToken(any(), any())).thenReturn(refreshToken);
+    }
     @Configuration
     @Import({FirewallDaoTestConfigurer.class, MetricsUtDaoTestConfigurer.class, ComponentsConfiguration.class,
             WebSecurityConfiguration.class, DefaultExceptionMapper.class, MetricsJpaConfig.class,
